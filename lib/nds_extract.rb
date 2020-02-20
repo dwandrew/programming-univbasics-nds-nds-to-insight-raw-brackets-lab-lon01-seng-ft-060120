@@ -5,6 +5,7 @@ require 'pp'
 def directors_totals(nds)
   row_index = 0
   result = {} 
+<<<<<<< HEAD
   while row_index < nds.length do
     inner_index = 0
     total = 0
@@ -17,6 +18,13 @@ def directors_totals(nds)
     row_index +=1
   end
 return result
+=======
+  while row_index<nds.length do
+    result = {nds[row_index][:name] => 0}
+  end
+  row_index+=1
+puts result  
+>>>>>>> a14e8e9f01597f239347eb182fa962675cecaf08
 end
 
 directors_totals(directors_database)
